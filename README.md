@@ -52,7 +52,7 @@ To install the Python3 requirements, run the following commands:
 ```
 python3 -m pip install --user grpcio
 python3 -m pip install --user grpcio-tools
-python3 -m pip install --user conan==1.52.0
+python3 -m pip install --user conan==1.54.0
 ```
 
 Then you need to configure ``conan``. You will need the following command:
