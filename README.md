@@ -86,6 +86,18 @@ You need to start CARLA first. Depending on your local installation this can be 
 cd carla_9.13
 ./CarlaUE4.sh
 ```
+
+Once CARLA starts, you need to generate the traffic using CARLA's configuration script. Just incase, make sure you are using the appropriate python version for running the script.
+```
+cd carla_9.13/PythonAPI/examples
+python generate_traffic.py --number-of-vehicles 2 --number-of-walkers 0
+```
+Or use the short alternative:
+```
+cd carla_9.13/PythonAPI/examples
+python generate_traffic.py -n 2 -w 0
+```
+
 The simulation can be started either using the IDE (following the instructions in the [Veins documentation](http://veins.car2x.org/tutorial/)) or simply by using the following commands:
 ```
 cd veins_carla/examples/veins_carla
