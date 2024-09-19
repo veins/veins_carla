@@ -28,6 +28,7 @@ Define_Module(ExampleCarlaApplication);
 
 void ExampleCarlaApplication::initialize(int stage)
 {
+    DemoBaseApplLayer::initialize(stage);
     if (stage == 0) {
         txMessage = new cMessage();
         txMessage->setKind(1337);
